@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t 457738878798.dkr.ecr.eu-west-3.amazonaws.com/nginx .
+      - docker build -t 457738878798.dkr.ecr.eu-west-3.amazonaws.com/nginx:latest .
       - docker tag 457738878798.dkr.ecr.eu-west-3.amazonaws.com/nginx $REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
